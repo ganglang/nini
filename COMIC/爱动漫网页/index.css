@@ -1,0 +1,400 @@
+body{
+	margin-left:50px;
+	margin-right: 50px;
+	border-top:1px solid #ccc; 
+	position:absolute;
+	width:1250px;
+	height: auto;
+}
+header{
+	position:relative;
+	width: 100%;
+	height: 210px;
+	top: 0;
+	left: 0;
+	border-bottom:1px solid #ccc;
+}
+/*头部*/
+header .head_left{
+	float: left;
+}
+header .head_left .adm_img img{
+	float: left;
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 140px;
+	height: 210px;	
+}
+/*头部的“爱动漫”字*/
+header .head_left .adm_f{
+	float: left;
+	position: relative;
+	width: auto;
+	height: 210px;
+	line-height: 210px;
+	font-size: 35px;
+	color:skyblue;
+	text-align: center;
+	animation:fontChange 2s infinite alternate;
+}
+
+@keyframes fontChange{
+	from{margin-right: 0px;}
+	to{margin-right: 35px;}
+}
+/*头部的tab栏*/
+header .head_tab{
+	float:right;
+	position: relative;
+	top: 0;
+	right:0;
+	width:auto;
+	height: 210px;
+}
+header .head_tab ul{
+	margin: 0;
+	list-style: none;
+	width: auto;
+	height: 35px;
+	border-bottom: 1px solid pink;
+}
+header  li{
+	width: 120px;
+	height: 35px;
+	font-size: 20px;
+	line-height: 35px;
+	text-align: center;
+	border-right: 1px dashed #999;
+	margin-right: 20px;
+	float: left;
+}
+header .head_tab li.active{
+	background-color: #eee;
+}
+/*头部tab栏的主体*/
+header .head_tab .head_tabbody{
+	margin-bottom: 0;
+	width: auto;
+	height: 175px;
+	border-left: 1px solid #999;
+	display: none;
+}
+header .head_tab .head_tabbody img{
+	float: left;
+	height: 175px;
+	width: 175px;
+}
+header .head_tab .head_tabbody .head_text{
+	margin-left:12px;
+	height: 175px;
+	width: 500px;
+	float:right;
+	font-size: 15px;
+}
+header .head_tab .head_tabbody.show{
+	display: block;
+}
+
+/*搜索栏*/
+.search_bar{
+	width:100%;
+	height:30px;
+	background-color: #ccc;
+}
+/*仿百度的智能搜索框样式*/
+.search{
+	margin-right: 0;
+	float: right;
+	line-height: 30px;
+}
+.search .bd_text{
+	position:absolute;
+	z-index: 10000;
+	width: 284px;
+	height: auto;
+	background-color: #fff;
+	
+}
+.search .bd_text ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	border: 1px solid black;
+}
+.search .bd_text li:hover{
+	background-color: skyblue;
+	cursor: pointer;
+}
+/*左边*/
+.bd .bd_left{
+	margin-right:2px;
+	padding-right: 30px;
+	float: left;
+	width: 31%;
+	height:500px;
+	background-color:pink;
+	text-align: center;
+}
+.bd .bd_left span{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+}
+.bd .bd_left .sp_font:hover{
+	cursor: pointer;
+	font-size: 30px;
+	color: #999;
+	transform:rotateY(360deg);	
+	transition:all 3s;
+}
+/*精灵图的样式*/
+.spirit{
+	margin-top: 2px;
+}
+.spirit .spzt{
+	margin-left: 120px;
+	border:1px solid #ccc;
+	height:173px;
+	width: 173px; 
+	background-image:url(./img/spirit.png);
+	background-position: 0px 0px;
+
+}
+.spirit .control{
+	margin-left: 35px;
+}
+
+/*放大镜的样式*/
+.zoom{
+	height:auto;
+	width: 500px;
+	position: relative;
+	margin-left: 5px;
+}
+.zoom .z_zt{
+	border: 2px solid #eee;
+	top:0;
+	left:0;
+	height:230px;
+	width:390px;
+	background-image: url(./img/zoom_small.png);
+	position: relative;
+}
+.zoom .z_mask{
+	height: 50px;
+	width: 50px;
+	background-color: rgba(66,66,66,0.5);
+	position: relative;
+	visibility: hidden;
+}
+.zoom .z_dd{
+	height: 350px;
+	width: 350px;
+	top:-300px;
+	left:392px;
+	position:relative;
+	background-image: url(./img/zoom_big.png);
+	background-position:200px 200px;
+	background-repeat: no-repeat;
+	visibility: hidden;
+	z-index:10000;
+}
+/*右边*/
+.bd .nav_right{
+	background-color: #eee;
+	float:right;
+	position: relative;
+}
+.bd .bd_right{
+	position: relative;
+	margin-left:150px;
+	float:left;
+	height:250px;
+	width:510px;
+	overflow: hidden;
+}
+/*轮播图的样式*/
+.bd .bd_right .lunbo{
+	position: relative;
+	top:0;
+	left:0;
+	height:250px;
+	width:510px;
+	overflow: hidden;
+	border:1px solid pink;
+	margin: 0 auto;
+}
+.bd .bd_right .lunbo .zhuti{
+	padding: 0;
+	height:250px;
+	width:510px;
+	overflow:hidden;
+}
+.bd .bd_right .lunbo .lbul{
+	margin: 0; 
+	padding:0;
+	list-style-type: none;
+	left:0px;
+	height:250px;
+	width:3060px;
+	position:absolute;
+}
+.bd .bd_right .lunbo .zhuti .lbul li{
+	float: left;
+	height:250px;
+	width:510px; 
+}
+
+.bd .bd_right .lunbo .lbqq{
+	right: 0;
+	bottom: 0;
+	z-index: 999;
+	height:35px;
+	width:510px;
+	text-align: center;
+	position: absolute;
+}
+.bd .bd_right .lunbo .lbqq span{
+	display: inline-block;
+	height:30px;
+	width:30px;
+	font-size:10px;
+	color:#666;
+	line-height:30px;
+	border:1px solid #666;
+	margin-right: 7px;	
+	border-radius: 15px;
+	background-color: #fff;
+	cursor: pointer;
+}
+.bd .bd_right .lunbo .lbqq span.active{
+	background-color: pink;
+}
+/*手风琴的样式*/
+.sfq{
+	margin: 0 auto;
+	position: relative;
+	bottom: 0;
+	right: 0;
+	height:248px;
+	width:820px;
+}
+.sfq .sfqzt{
+	padding: 0;
+	list-style: none;
+	height:248px;
+	width:820px;
+	position: relative;
+	overflow: hidden;
+}
+.sfq .sfqzt li{
+	border:3px solid #eee;
+	height:248px;
+	float:left;
+	position:absolute;
+	margin:0;
+}
+/*分隔栏*/
+.pro_bar{
+	position: relative;
+	width:100%;
+	height:30px;
+	top:500px;
+	background-color:#ccc;
+}
+.bar_2{
+	position: relative;
+	top: 500px;
+	width: 100%;
+	background-color:pink;
+}
+.bar_2 .xztu{
+	position:relative;
+	top: 0px;
+	left: 0px;
+}
+
+.bar_2 .xztu ul{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	height:450px;
+	list-style: none;
+}
+.bar_2 .xztu .xztu_zt li{
+	position:absolute;
+	top: 0;
+	left: 0;
+}
+.bar_2 .xztu .xztu_zt li img{
+	position:absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.finger img{
+	position: fixed;
+	bottom: 60px;
+	right: 50px;
+	width: 72px;
+	height: 100px;
+	display: none;
+	animation:finger 3s infinite;
+}
+
+@keyframes finger{
+	25%{
+		width: 36px;
+	    height: 50px;
+	   },
+	50%{
+		width: 18px;
+		height: 25px;
+	},
+	75%{
+	  width: 36px;
+	  height: 50px;
+	},
+	100%{
+	  width: 72px;
+	  height: 100px;
+	}
+}
+
+.footer{
+	position: relative;
+	top:500px;
+	width: 100%;
+	height: auto;
+	left: 0;
+	background-color:#bbb;
+}
+.footer .f_bd div{
+	position: relative;
+	width: 100%;
+}
+.footer .f_bd span{
+	position: relative;
+	width: 30%;
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid green;
+	margin-right: 50px;
+	border-right: 2px solid #ccc;
+	color:gray;
+}
+.footer .f_bd .f_one span{
+	width: 30%;
+}
+.footer .f_bd .f_two span:first-child{
+	margin-left: 500px;
+}
+.footer span a{
+	color: gray;
+}
+
+

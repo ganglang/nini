@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>爱动漫</title>
+	<link rel="stylesheet" href="./index.css">
+	<script src="./js/my.js"></script>
+  <script src="./index.js"></script>
+</head>
+ <body>
+ <!--头部-->
+ <header>
+   <div class="head_left">
+     <span class="adm_img">
+       <img src="./img/longmao.jpeg" alt="">
+     </span>
+     <span class="adm_f">爱</span>
+     <span class="adm_f">动</span>
+     <span class="adm_f">漫</span>
+   </div>
+
+   <div class="head_tab">
+     <ul class="head_ul" id="head_ul">
+       <li class="active">海贼王</li>
+       <li>火影忍者</li>
+       <li>名侦探柯南</li>
+     </ul>
+
+     <div class="head_tabbody show">
+     <span><img src="./img/hzw_fm.jpg" alt=""></span>
+      <div class="head_text"><p>有个男人他拥有世界上一切财富、名望和权势，他就是「海盗王」高路德•罗杰。在临死前说过这样一句话：让全世界的人都奔向大海「想要我的财宝吗？想要的话全就拿去吧……！你们去找吧！我把世界上的一切都放在那里了」。后来世界上的人们将这个宝藏称作“一个大秘宝”（One Piece），许多人为了争夺大秘宝One Piece，无数海盗扬起旗帜，互相斗争，后来就形成了「大海盗时代」。主角蒙奇•D•路飞在遥远的路途上找寻着志同道合的伙伴，携手共进「伟大航线」，目标当上「海盗王」。航海王是一个依着彼此坚毅的友情最终获得胜利，大伙一起朝着梦想扬帆努力的冒险故事。</p>
+      </div> 
+     </div>
+
+     <div class="head_tabbody">
+     <span><img src="./img/hyrz_fm.jpg" alt=""></span>
+      <div class="head_text"><p>作品设定在一个忍者的世界，故事从主人公漩涡鸣人的孤儿生活开始，四代火影为了保护村子，将攻击村子九尾妖狐封印到了他体内，鸣人因此受尽了村人的冷落，只是拼命用各种恶作剧试图吸引大家的注意力。好在还是有伊鲁卡老师的关心，鸣人的性格才没有变得扭曲，他总是干劲十足、非常乐观。
+      为了让更多的人认可自己，鸣人的目标是成为火影。整个故事就围绕鸣人的奋斗、成长，鸣人的伙伴们，以及这个忍者世界的各种争斗和阴谋展开。</p>
+      </div> 
+     </div>
+
+     <div class="head_tabbody">
+     <span><img src="./img/mztkn_fm.jpg" alt=""></span>
+      <div class="head_text"><p>高中生侦探工藤新一，被称为“日本警察的救世主”、“平成年代的福尔摩斯”。一次在与青梅竹马的女友毛利兰去游乐园游玩时，发现两个行动诡异的黑衣人。新一跟踪他们直到交易现场，另一个黑衣人趁其不注意从后面将他一棒击倒，并灌下一种名为APTX4869的神秘毒药企图杀他灭口，但因为副作用他的身体竟回到发育期的孩童状态。考虑到要是黑衣人知道他还活着的话，必将使周围的亲朋好友受到牵连，于是新一化名为“江户川柯南”，寄住在毛利兰的家中，想借助其父亲、担任侦探的毛利小五郎的力量来找寻黑衣人。</p>
+      </div> 
+     </div>
+   </div>
+ </header>
+<!--搜索栏-->
+ <div class="search_bar">
+  <div class="search" id="search">
+  百度一下
+    <input id="bd_search" type="text" placeholder="请输入搜索内容">
+    <div class="bd_text" id="bd_text"></div>
+  </div>
+</div>
+<div class="bd">
+<!--左边栏-->
+  <div class="bd_left">
+  <span class="sp_font">海</span>
+  <span class="sp_font">贼</span>
+  <span class="sp_font">王</span>
+  <span class="sp_font">精</span>
+  <span class="sp_font">灵</span>
+  <span class="sp_font">图</span>
+  <div class="spirit" id="spirit">
+    <div class="spzt" id="spzt">
+    </div>
+  <div class="control" id="control">
+    <input type="button" value="↑">
+    <input type="button" value="↓">
+    <input type="button" value="←">
+    <input type="button" value="→">
+  </div>
+ </div>
+<!--放大镜-->
+ <div class="zoom" id="zoom">
+  <div class="z_zt" id="z_zt">
+    <div class="z_mask" id="z_mask"></div>
+  </div>
+  <div class="z_dd" id="z_dd">
+  </div>
+</div>
+  </div>
+<!--右边栏-->
+<div class="nav_right">
+  <div class="bd_right">
+    <!--轮播图效果-->
+    <div class="lunbo">
+        <div class="zhuti">
+          <ul class="lbul" id="lbul">
+            <li><a href="#"><img src="./img/lunbo01.jpg" alt="lunbo01"></a></li>
+            <li><a href="#"><img src="./img/lunbo02.jpg" alt="lunbo02"></a></li>
+            <li><a href="#"><img src="./img/lunbo03.jpeg" alt="lunbo03"></a></li>
+            <li><a href="#"><img src="./img/lunbo04.jpeg" alt="lunbo04"></a></li>
+            <li><a href="#"><img src="./img/lunbo05.jpg" alt="lunbo05"></a></li>
+            <li><a href="#"><img src="./img/lunbo06.jpg" alt="lunbo06"></a></li>
+          </ul>
+          <div class="lbqq" id="lbqq">
+            <span class="active">1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+            <span>6</span>
+          </div>
+        </div>
+      </div>
+  </div>
+ <!--手风琴效果-->
+    	<div class="sfq" id="sfq">
+    		<ul class="sfqzt" id="sfqzt">
+    			<li><a href="#"><img src="./img/lunbo01.jpg" alt="lunbo01"></a></li>
+    			<li><a href="#"><img src="./img/lunbo02.jpg" alt="lunbo02"></a></li>
+    			<li><a href="#"><img src="./img/lunbo03.jpeg" alt="lunbo03"></a></li>
+    			<li><a href="#"><img src="./img/lunbo04.jpeg" alt="lunbo04"></a></li>
+    			<li><a href="#"><img src="./img/lunbo05.jpg" alt="lunbo05"></a></li>
+    			<li><a href="#"><img src="./img/lunbo06.jpg" alt="lunbo06"></a></li>
+    		</ul>
+    	</div>
+</div>  
+
+<div class="pro_bar">
+</div>
+
+<div class="bar_2">
+  <div class="xztu">
+    <ul class="xztu_zt" id='xztu_zt'>
+          <li><a href="#"><img src="./img/dongjing01.jpg" alt="01"></a></li>
+          <li><a href="#"><img src="./img/dongjing02.jpeg" alt="02"></a></li>
+          <li><a href="#"><img src="./img/dongjing03.jpg" alt="03"></a></li>
+          <li><a href="#"><img src="./img/dongjing04.jpg" alt="04"></a></li>
+          <li><a href="#"><img src="./img/dongjing05.png" alt="05"></a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="finger">
+  <a href="./Bootstrap.html"><img  id="finger" src="./img/finger.jpg" alt="finger"></a>
+</div>
+
+<div class="footer">
+<div class="f_bd">
+  <div class="f_one"><span>刘桂虹</span><span>18814129846</span><span>1494796010@qq.com</span></div>
+  
+  <div class="f_two"><span><a href="www.baidu.com">baidu</a></span>
+  <span><a href="https://www.bilibili.com/">bilibili</a></span></div>
+</div>
+</div>
+</body>   
+</html>

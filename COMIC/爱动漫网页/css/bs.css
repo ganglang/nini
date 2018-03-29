@@ -1,0 +1,56 @@
+.dyone{
+	position: relative;
+}
+.dyone .dyleft{
+	float: left;
+	width:100px;
+	height: 139px;
+}
+.dyone .dymark{
+	z-index:99;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100px;
+	height: 139px;
+	text-align: center;
+	background:rgba(125,125,125,0.8);
+	display: none;
+}
+.dyone .dyright{
+	padding:10px 0 0 10px;
+	float:left;
+	width: 420px;
+	height: 139px;
+	font-size: 14px;
+}
+.dyone .dyhidden{
+	z-index: 99;
+	position: absolute;
+	top: 0;
+	left: 100px;
+	width: 420px;
+	height: 139px;
+	background-color: rgba(247,191,0,0.8);
+	display: none;
+	padding:20px;
+}
+#tabs{
+	height:550px;
+}
+#messages ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	}
+#messages .completed{
+	color: gray;
+	text-decoration:line-through;
+}
+#messages .btn{
+	margin-left: 5px;
+}
+#messages ul li input{
+	width: 350px;
+	height: 35px;
+}
